@@ -17,3 +17,5 @@ function dnaStrand(dna){
       } else { return 'G'}
     }).join('')
   }
+
+    console.log(dnaStrand('TTT'))
