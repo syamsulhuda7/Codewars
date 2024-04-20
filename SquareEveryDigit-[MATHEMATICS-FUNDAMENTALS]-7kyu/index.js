@@ -4,10 +4,9 @@
 // Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
 // Note: The function accepts an integer and returns an integer.
 
-const { assert } = require("chai")
+const { assert } = require("chai");
 
 describe("Basic tests", () => {
-  
   it("squareDigits(3212) should equal 9414", () => {
     assert.strictEqual(squareDigits(3212), 9414);
   });
@@ -19,10 +18,14 @@ describe("Basic tests", () => {
   it("squareDigits(0) should equal 0", () => {
     assert.strictEqual(squareDigits(0), 0);
   });
-})
+});
 
 // Solution
-function squareDigits(num){
-    const x = num.toString().split('').map( x => parseInt(x)**2).join('')
-    return parseInt(x);
-  }
+function squareDigits(num) {
+  const x = num
+    .toString()
+    .split("")
+    .map((x) => parseInt(x) ** 2)
+    .join("");
+  return parseInt(x);
+}
