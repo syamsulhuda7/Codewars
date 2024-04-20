@@ -6,16 +6,21 @@
 // "GTAT" --> "CATA"
 
 // Solution
-function dnaStrand(dna){
-    return dna.split('').map(x => {
-      if (x === 'A') {
-        return 'T'
-      } else if (x === 'T') {
-        return 'A'
-      } else if (x === 'G') {
-        return 'C'
-      } else { return 'G'}
-    }).join('')
-  }
+function dnaStrand(dna) {
+  return dna
+    .split("")
+    .map((x) => {
+      if (x === "A") {
+        return "T";
+      } else if (x === "T") {
+        return "A";
+      } else if (x === "G") {
+        return "C";
+      } else {
+        return "G";
+      }
+    })
+    .join("");
+}
 
-    console.log(dnaStrand('TTT'))
+console.log(dnaStrand("TTT"));
